@@ -1,0 +1,23 @@
+:root {
+  --primary: #00ff88;
+  --danger: #ff4d4d;
+  --bg: #0f0f0f;
+  --card: #1a1a1a;
+  --accent: #2979ff;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: #e0e0e0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+}

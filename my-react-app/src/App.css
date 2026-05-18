@@ -1,0 +1,160 @@
+/* Header & Control */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: var(--card);
+  border-radius: 15px;
+  border: 1px solid #333;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-unlock {
+  background: var(--danger);
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.2);
+}
+
+.btn-unlock:hover {
+  transform: scale(1.05);
+}
+
+/* Grid Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #333;
+}
+
+/* User Gallery */
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.user-item {
+  text-align: center;
+  background: #252525;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #444;
+}
+
+.user-item img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  margin-bottom: 8px;
+}
+
+.user-item p {
+  margin: 5px 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.btn-del {
+  background: none;
+  border: none;
+  color: var(--danger);
+  cursor: pointer;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+/* Inputs */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: #111;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.btn-add {
+  background: var(--primary);
+  color: #000;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Log Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  color: #888;
+  border-bottom: 2px solid #333;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #222;
+}
+
+.status-granted {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.status-denied {
+  color: var(--danger);
+  font-weight: bold;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.btn-page {
+  background: #333;
+  padding: 8px 15px;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
